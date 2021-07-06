@@ -1,0 +1,119 @@
+*{padding: 0;margin: 0;}
+
+body {margin: 0;padding: 0;}
+
+.head{
+    background: url(img/head.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+nav {background: black;width: 100%;height: 80px;}
+
+ul {color: white;}
+
+.logo {width: 30%;display: inline-block;float: left;height: 80px;}
+
+.logo img {max-width: 100%;max-height: 100%;}
+
+.menu {width: 40%;float: right;margin-right: 5%;}
+
+.menu ul {
+    text-align: center;
+    list-style: none;
+    text-transform: uppercase;
+    font-family: arial;
+    font-weight: 600;
+    float: right;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 20px;
+    border-right: 1px solid #666;
+}
+.active{background: #999;transform: scale(1.1);border-radius: 4px;cursor: pointer;}
+.menu li:hover{background: #999;transform: scale(1.1);border-radius: 4px;cursor: pointer;}
+
+div#home {
+    width: 600px;
+    border: 15px solid #30308a61;
+    background: #06a6d1e0;
+    transform: translate(400px,100px);
+}
+
+#home p {
+    width: 550px;
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 20px;
+    font-size: 30px;
+    font-family: arial;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    line-height: 45px;
+    color: #fdfcf9;
+}
+
+.lginbtn,.crtbtn {
+    width: 100px; 
+    padding: 35px;
+    margin-left: 80px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    transform: rotate(25deg);
+    display: inline-block;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-size: 300%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+
+.lginbtn{background: #171d47;}
+.crtbtn{background: #c01d23;}
+.lginbtn::before{background: #c01d23;}
+.crtbtn::before{background: #171d47;}
+
+
+.lginbtn::before,.crtbtn::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 0%;
+   z-index: -1;
+   transition: 2s;
+
+}
+
+.lginbtn:hover::before,.crtbtn:hover::before{
+    height: 180%;
+    width: 180%;
+}
+
+.crtbtn a,.lginbtn a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: arial;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.crtbtn button,.lginbtn button{
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100px;
+    margin: auto;
+    transform: rotate(-25deg);
+}

@@ -1,0 +1,184 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 1200px;
+    background: url(img/bg2.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    margin: 0;
+    display: inline-flex;
+    background: #1877adb8;
+    width: 100%;
+    color: white;
+    box-shadow: 0px 6px 20px 0px #fff;
+}
+
+.logo {
+    width: 700px;
+}
+
+
+.logo img {
+    width: 200px;
+    height: 60px;
+    padding: 15px 40px;
+}
+
+
+
+.navber ul {
+    list-style: none;
+}
+
+.navber li {
+    display: inline-flex;
+    text-transform: uppercase;
+    font-family: arial;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 15px 26px;
+    text-shadow: 0px 5px 5px white;
+    font-size: 18px;
+    border: 2.5px solid white;
+    margin-right: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.navber li::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #ffffff45;
+    z-index: 1;
+    transition: 2s;
+}
+
+.navber li:hover{
+    transform: scale(1.1);
+}
+
+.navber li:hover::before{
+    width: 120%;
+}
+
+.from {
+    width: 800px;
+    margin: auto;
+    margin-top: 80px;
+    background: #1179b0d1;
+    box-shadow: 0px 0px 20px 5px white;
+    margin-bottom: 40px;
+    border-radius: 5px;
+}
+
+.from h2 {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: arial;
+    font-size: 30px;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    padding: 20px;
+    background: #f89b1c;
+    text-shadow: 0px 0px 20px white;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.left{width: 400px;float: left;}
+.right{width: 400px;float: left;}
+
+span {
+    color: white;
+    text-transform: capitalize;
+    font-size: 20px;
+    padding: 20px;
+    font-family: arial;
+    letter-spacing: 2px;
+    display: block;
+}
+
+input {
+    border: none;
+    outline: none;
+    padding: 20px;
+    width: 300px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 0px 100px 0px 100px;
+}
+
+input:hover{transform: scale(0.9);}
+
+select{
+    border: none;
+    outline: none;
+    padding: 20px;
+    width: 340px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 0px 100px 0px 100px;
+    cursor: pointer;
+}
+
+select:hover{transform: scale(1.1);}
+
+input[type="date"]:hover{cursor: pointer;transform: scale(1.1);}
+
+.submitbtn {
+    border: none;
+    outline: none;
+    padding: 20px;
+    width: 600px;
+    margin-left: 100px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    border-radius: 0px 100px 0px 100px;
+    font-size: 26px;
+    font-family: arial;
+    font-weight: 600;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.submitbtn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 0%;
+    background: #f89b1c;
+    z-index: -1;
+    transition: 1s;
+}
+
+.submitbtn:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+    color: white;
+    text-shadow: 0px 0px 20px white;
+}
+
+.submitbtn:hover::before{
+    width: 150%;
+    height: 150%;
+    
+}
